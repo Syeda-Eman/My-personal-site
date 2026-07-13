@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>My Portfolio!</title>
-    <link rel="stylesheet" href="---">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eman Shahid · portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <style>
-        *{margin: 0; padding:0; box-sizing: border-box;}
-        body{
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
             background: linear-gradient(145deg, #fdf6e3 0%, #f2e9d0 100%);
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             padding: 2rem 1.2rem;
@@ -16,34 +20,40 @@
             align-items: center;
             justify-content: center;
         }
-        .card{
+        .card {
             max-width: 1000px;
             width: 100%;
             background: rgba(255, 248, 235, 0.75);
             backdrop-filter: blur(6px);
             border-radius: 4rem 2rem 4rem 2rem;
             padding: 2.2rem 2rem;
-            box-shadow: 0 30px 60px -20px rgba(0,0,0,0.25), 0 0 0 1px rgba(255, 215, 150, 0.3);
+            box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 215, 150, 0.3);
             transition: 0.2s;
             border: 2px solid #ffe5c4;
         }
-        .flex{
-            display:flex;
-            flex-wrap: wrap; 
-            align-items: center; 
-            justify-content: space-between; 
-            gap:1.5rem;}
-        .avatar{
-            background: #ffdbb5;
-            width: 120px; height: 120px;
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+        }
+        .avatar {
+            width: 130px;
+            height: 130px;
             border-radius: 50% 30% 50% 30%;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 3.6rem;
-            font-weight: 700;
-            color: #4a2c1a;
-            box-shadow: 8px 8px 0 #dbaa7a, 0 8px 20px rgba(0,0,0,0.1);
-            border: 3px solid #fff1da;
+            box-shadow: 8px 8px 0 #dbaa7a, 0 8px 20px rgba(0, 0, 0, 0.1);
+            border: 4px solid #fff1da;
             transform: rotate(-2deg);
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transform: rotate(2deg);
         }
         h1 {
             font-size: 2.8rem;
@@ -51,16 +61,281 @@
             letter-spacing: -1px;
             color: #3b2616;
         }
-        .glow{background: #fce3c7; padding: 0.2rem 1.2rem; border-radius: 60px; display: inline-block; font-weight: 600; font-size: 0.85rem; color: #603e24;}
-        .tagline{font-size: 1.2rem; color: #5c3f28; max-width: 400px; margin: 0.5rem 0 1.2rem;}
-        .btn{
-            background: #3b2616; color:#fff6e5; border: none; padding: 0.6rem 1.8rem; border-radius: 60px;
-            font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;
-            transition: 0.15s; border: 2px solid #3b2616;
+        .glow {
+            background: #fce3c7;
+            padding: 0.2rem 1.2rem;
+            border-radius: 60px;
+            display: inline-block;
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #603e24;
         }
-        .btn-outline {background: transparent; color: #3b2616; border-color: #bb9a7a;}
-        .btn-outline i {color: #3b2616;}
-        .btn:hover {transform: scale(0.96); background: #5f3f28;}
-        .btn-outline:hover{background: #f2dfca;}
-        .section{margin:2.8rem 0 2rem;}
-        h2{font-size: 1.8rem; font-weight: 700; color:#3b2616; display: flex; align-items: center; gap: 0.6rem; border-bottom:4px dashed #dbaa7a; padding-bottom:0.3rem; width: fit-content;}
+        .tagline {
+            font-size: 1.2rem;
+            color: #5c3f28;
+            max-width: 400px;
+            margin: 0.5rem 0 1.2rem;
+        }
+        .btn {
+            background: #3b2616;
+            color: #fff6e5;
+            border: none;
+            padding: 0.6rem 1.8rem;
+            border-radius: 60px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: 0.15s;
+            border: 2px solid #3b2616;
+            cursor: pointer;
+        }
+        .btn-outline {
+            background: transparent;
+            color: #3b2616;
+            border-color: #bb9a7a;
+        }
+        .btn-outline i {
+            color: #3b2616;
+        }
+        .btn:hover {
+            transform: scale(0.96);
+            background: #5f3f28;
+        }
+        .btn-outline:hover {
+            background: #f2dfca;
+        }
+        .section {
+            margin: 2.8rem 0 2rem;
+        }
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #3b2616;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            border-bottom: 4px dashed #dbaa7a;
+            padding-bottom: 0.3rem;
+            width: fit-content;
+        }
+        .pill-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem 1rem;
+            margin: 0.8rem 0 0;
+        }
+        .pill {
+            background: #fff4e3;
+            padding: 0.3rem 1.4rem;
+            border-radius: 60px;
+            font-weight: 500;
+            border: 2px solid #edd5b8;
+            color: #3b2616;
+            font-size: 0.9rem;
+            box-shadow: 2px 2px 0 #dbaa7a;
+        }
+        .pill i {
+            margin-right: 6px;
+            color: #b57c4a;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.8rem;
+            margin-top: 1rem;
+        }
+        .proj {
+            background: #fffbf2;
+            padding: 1.5rem 1.2rem;
+            border-radius: 2.5rem 1.2rem 2.5rem 1.2rem;
+            border: 2px solid #ebd3b8;
+            box-shadow: 4px 4px 0 #dbaa7a;
+            transition: 0.2s;
+        }
+        .proj:hover {
+            transform: translateY(-6px) rotate(0.5deg);
+            box-shadow: 8px 8px 0 #b58255;
+        }
+        .proj i {
+            font-size: 2rem;
+            color: #a66f42;
+            margin-bottom: 0.3rem;
+            display: block;
+        }
+        .proj h3 {
+            font-size: 1.3rem;
+            color: #2f1e10;
+        }
+        .proj p {
+            font-size: 0.9rem;
+            color: #5c3f28;
+            margin: 0.4rem 0 0.8rem;
+        }
+        .proj a {
+            color: #3b2616;
+            text-decoration: none;
+            font-weight: 600;
+            margin-right: 0.8rem;
+            font-size: 0.9rem;
+        }
+        .proj a i {
+            font-size: 0.9rem;
+            display: inline;
+            margin-right: 3px;
+        }
+        .proj a:hover {
+            color: #a66f42;
+        }
+        .vibe-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            background: #f7ecdb;
+            padding: 1.8rem;
+            border-radius: 3rem 1rem 3rem 1rem;
+            border: 2px solid #e5cdb0;
+        }
+        .vibe-row .text {
+            flex: 2;
+        }
+        .vibe-row .text p {
+            margin-bottom: 0.7rem;
+            color: #3b2a1a;
+        }
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.7rem 1rem;
+        }
+        .contact a {
+            background: #fffbf2;
+            padding: 0.4rem 1.3rem;
+            border-radius: 60px;
+            text-decoration: none;
+            color: #3b2616;
+            font-weight: 500;
+            border: 2px solid #dbb594;
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            transition: 0.15s;
+        }
+        .contact a i {
+            color: #a66f42;
+        }
+        .contact a:hover {
+            background: #e3cdb4;
+            border-color: #b58255;
+            transform: scale(0.97);
+        }
+        .foot {
+            text-align: center;
+            margin-top: 2.8rem;
+            color: #75593d;
+            font-size: 0.9rem;
+            border-top: 2px dashed #dbb594;
+            padding-top: 1.5rem;
+        }
+        .foot i {
+            color: #b57c4a;
+        }
+        /* resume button enhancement */
+        .resume-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        @media (max-width: 600px) {
+            .card {
+                padding: 1.5rem;
+            }
+            h1 {
+                font-size: 2.1rem;
+            }
+            .avatar {
+                width: 90px;
+                height: 90px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+
+        <div class="flex">
+            <div>
+                <span class="glow"><i class="fas fa-sparkles" style="margin-right: 5px;"></i> ✦ vibing ✦</span>
+                <h1>Eman Shahid</h1>
+                <div class="tagline"><i class="fas fa-bolt" style="color:#b57c4a; margin-right: 6px;"></i>Design · Code · Play</div>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.7rem;">
+                    <a href="Syeda Eman Hussain Resume (2).pdf" download class="btn btn-outline resume-link">
+                        <i class="fas fa-file-pdf"></i> Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-crown" style="color:#b57c4a;"></i> Vibes & tools</h2>
+            <div class="pill-group">
+                <span class="pill"><i class="fas fa-brain"></i> AI</span>
+                <span class="pill"><i class="fas fa-robot"></i> ML</span>
+                <span class="pill"><i class="fas fa-network-wired"></i> DL</span>
+                <span class="pill"><i class="fab fa-css3-alt"></i> CSS</span>
+                <span class="pill"><i class="fab fa-python"></i> Python</span>
+                <span class="pill"><i class="fab fa-js"></i> JavaScript</span>
+                <span class="pill"><i class="fab fa-html5"></i> HTML</span>
+            </div>
+        </div>
+
+        <!-- projects -->
+        <div class="section">
+            <h2><i class="fas fa-rocket" style="color:#b57c4a;"></i> fun projects</h2>
+            <div class="grid">
+                <div class="proj">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>MariOS</h3>
+                    <p>OS inspired by Mario</p>
+                    <a href="https://syeda-eman.github.io/MariOS/" target="_blank"><i class="fas fa-link"></i> demo</a>
+                    <a href="https://github.com/Syeda-Eman/MariOS" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="proj">
+                    <i class="fas fa-palette"></i>
+                    <h3>Color flash</h3>
+                    <p>Site that changes color</p>
+                    <a href="https://user-cdn.hackclub-assets.com/019edb26-8c21-7937-a701-01cc852e7724/index.html" target="_blank"><i class="fas fa-link"></i> demo</a>
+                    <a href="https://github.com/Syeda-Eman/Color-flash" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="proj">
+                    <i class="fas fa-stopwatch"></i>
+                    <h3>Reaction time</h3>
+                    <p>Check your reaction time</p>
+                    <a href="https://syeda-eman.github.io/Reaction-Time/" target="_blank"><i class="fas fa-link"></i> demo</a>
+                    <a href="https://github.com/Syeda-Eman/Reaction-Time" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-face-smile-wink" style="color:#b57c4a;"></i> about / connect</h2>
+            <div class="vibe-row">
+                <div class="text">
+                    <p><i class="fas fa-hand-peace" style="margin-right: 8px; color:#a66f42;"></i> Hi! I'm Eman. I craft digital things that feel good. 4+ years of making stuff people love.</p>
+                    <p><i class="fas fa-location-dot" style="margin-right: 6px; color:#a66f42;"></i> Based in Riyadh</p>
+                </div>
+                <div class="contact">
+                    <a href="mailto:emansyed2212@gmail.com"><i class="fas fa-envelope"></i> email</a>
+                    <a href="https://www.linkedin.com/in/syeda-eman/" target="_blank"><i class="fab fa-linkedin-in"></i> linkedin</a>
+                    <a href="https://github.com/Syeda-Eman" target="_blank"><i class="fab fa-github"></i> github</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="foot">
+            <i class="fas fa-meteor"></i> made with coffee · 2026 · all rights reserved
+        </div>
+    </div>
+</body>
+</html>

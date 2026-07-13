@@ -16,7 +16,7 @@ My personal portfolio website to showcase my projects and skills.
 
 ---
 # Tech Stack
-HTML5
-CSS3 (Custom styles, no frameworks)
-Font Awesome 6 (Icons)
-Google Fonts (Segoe UI system font)
+- HTML5
+- CSS3 (Custom styles, no frameworks)
+- Font Awesome 6 (Icons)
+- Segoe UI system font

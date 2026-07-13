@@ -1,31 +1,22 @@
-🌟 Eman Shahid · Portfolio Website
+# Eman Shahid · Portfolio Website
 My personal portfolio website to showcase my projects and skills.
 
 ---
 
-🚀 Features
-Colorful & Friendly Design - Warm, inviting aesthetic with playful shapes and gradients
+# Features
 
-Responsive Layout - Works beautifully on all devices (mobile, tablet, desktop)
-
-Personal Branding - Custom avatar, tagline, and personality-driven copy
-
-Project Showcase - Displaying work with live demos and GitHub links
-
-Skills Section - Highlighting tech stack with fun pill-style badges
-
-Social Links - Connect via email, LinkedIn, GitHub
-
-Resume Download - One-click PDF download
-
-Interactive Elements - Hover animations on cards and buttons for engaging UX
+- Warm, inviting aesthetic with playful shapes and gradients
+- Works beautifully on all devices (mobile, tablet, desktop)
+- Custom avatar, tagline, and personality-driven copy
+- Displaying work with live demos and GitHub links
+- Highlighting tech stack with fun pill-style badges
+- Connect via email, LinkedIn, GitHub
+- One-click PDF download
+- Hover animations on cards and buttons for engaging UX
 
 ---
-🛠️ Tech Stack
+# Tech Stack
 HTML5
-
 CSS3 (Custom styles, no frameworks)
-
 Font Awesome 6 (Icons)
-
 Google Fonts (Segoe UI system font)
